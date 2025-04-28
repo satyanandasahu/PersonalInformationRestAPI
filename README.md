@@ -16,3 +16,9 @@ Hit this URL <b> http://localhost:8080/welcomemessage </b>after the successful s
 To run the war file, deploye it on the external tomcat.
 Hit this URL <b> http://localhost:8080/<applicationcontext>/welcomemessage </b>after the successful start of embbeded tomcat. You everything goes well you will get this message <b> Welcome to Personal Information Portal </b>
 Here applicationcontext is PersonalInformationRestAPI-0.0.1-SNAPSHOT
+
+Steps to test the war file
+1. To test PersonalInformationRestAPI-0.0.1-SNAPSHOT.war file deploy the war file on external Tomcat (I used Tomcat Version 11)
+2. My ClientApplication will give you a war. Deploy the war on tomcat. Before doing the build read the readme file on ClientApplication repository.
+3. Hit the URL, You will have a page tab to create record and other tab to view the record.
+4. Any issue you can message me. 
