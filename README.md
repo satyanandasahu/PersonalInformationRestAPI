@@ -17,7 +17,7 @@ To run the war file, deploye it on the external tomcat.
 Hit this URL <b> http://localhost:8080/<applicationcontext>/welcomemessage </b>after the successful start of embbeded tomcat. You everything goes well you will get this message <b> Welcome to Personal Information Portal </b>
 Here applicationcontext is PersonalInformationRestAPI-0.0.1-SNAPSHOT
 
-war: Web Application Archive
+war: Web Application Archive     
 jar: Java Archive
 
 Steps to test the war file
