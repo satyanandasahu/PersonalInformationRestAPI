@@ -10,13 +10,18 @@ CREATE TABLE Person (PersonId varchar(255), FirstName varchar(255), MiddleName v
 Run this maven command to create a jar artifact <b> mvn clean package -Pjar </b>
 Run this maven command to create a war artifact <b> mvn clean package -Pwar </b>
 
-To run the jar file navigate to the targat folder in command prompt then run this command java - jar PersonalInformationRestAPI-0.0.1-SNAPSHOT.jar
+To run the jar file navigate to the targat folder in command prompt then run this command <b> java - jar PersonalInformationRestAPI-0.0.1-SNAPSHOT.jar </b>
 Hit this URL <b> http://localhost:8080/welcomemessage </b>after the successful start of embbeded tomcat. You everything goes well you will get this message <b> Welcome to Personal Information Portal </b>
 
 To run the war file, deploye it on the external tomcat.
 Hit this URL <b> http://localhost:8080/<applicationcontext>/welcomemessage </b>after the successful start of embbeded tomcat. You everything goes well you will get this message <b> Welcome to Personal Information Portal </b>
 Here applicationcontext is PersonalInformationRestAPI-0.0.1-SNAPSHOT
 
+Steps to test the war file
+1. To test PersonalInformationRestAPI-0.0.1-SNAPSHOT.war file deploy the war file on external Tomcat (I used Tomcat Version 11)
+2. My ClientApplication will give you a war. Deploy the war on tomcat. Before doing the build read the readme file on ClientApplication repository.
+3. Hit the URL, You will have a page tab to create record and other tab to view the record.
+4. Any issue you can message me. 
 
 Docker Deployment Instruction.
 1. If you have a single docker file then use this command
@@ -32,7 +37,7 @@ Docker Deployment Instruction.
 	ii. docker run --add-host=<host name> : <IP Address of host PC> -d -p <containers port:host port> --name <name of the docker container> <docker image name>
 		for example: docker run --add-host=Satya:172.26.160.1 -d -p 8080:8080 --name restapiwar dockerrestapiwar
 		
-		
 4. Now you can check the application on your browser for this particular application the URL is
 	i. http://localhost:8080/welcomemessage (for jar deployed application)
 	ii. http://localhost:8080/PersonalInformationRestAPI-0.0.1-SNAPSHOT/welcomemessage (for war deployed application)
+
