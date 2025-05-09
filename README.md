@@ -16,3 +16,23 @@ Hit this URL <b> http://localhost:8080/welcomemessage </b>after the successful s
 To run the war file, deploye it on the external tomcat.
 Hit this URL <b> http://localhost:8080/<applicationcontext>/welcomemessage </b>after the successful start of embbeded tomcat. You everything goes well you will get this message <b> Welcome to Personal Information Portal </b>
 Here applicationcontext is PersonalInformationRestAPI-0.0.1-SNAPSHOT
+
+
+Docker Deployment Instruction.
+1. If you have a single docker file then use this command
+	docker build -t <tag name> .	( for example: docker build -t dockerrestapi . )
+		
+2. If you have multiple docker file then use 		
+	docker build -f <file name> -t <tag name> .		( for example: docker build -f Dockerfile_jar -t dockerrestapi . )
+		
+3. To run you application on docker use this command
+	i. docker run --add-host=<host name> : <IP Address of host PC> -d -p <containers port:host port> <docker image name>
+		for example: docker run --add-host=Satya:170.30.148.1 -d -p 8080:8080 dockerrestapi
+		
+	ii. docker run --add-host=<host name> : <IP Address of host PC> -d -p <containers port:host port> --name <name of the docker container> <docker image name>
+		for example: docker run --add-host=Satya:172.26.160.1 -d -p 8080:8080 --name restapiwar dockerrestapiwar
+		
+		
+4. Now you can check the application on your browser for this particular application the URL is
+	i. http://localhost:8080/welcomemessage (for jar deployed application)
+	ii. http://localhost:8080/PersonalInformationRestAPI-0.0.1-SNAPSHOT/welcomemessage (for war deployed application)
