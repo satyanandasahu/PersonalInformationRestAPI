@@ -44,5 +44,9 @@ Docker Deployment Instruction. (Prerequiste you need to have docker installed in
 	i. http://localhost:8080/welcomemessage (for jar deployed application)
 	ii. http://localhost:8080/PersonalInformationRestAPI-0.0.1-SNAPSHOT/welcomemessage (for war deployed application)
 
-Note: To better understand this project this video on youtube link: https://youtu.be/o8IIkcmXt6Q
+Note: To better understand this project this video on youtube link: 
+1.	https://youtu.be/o8IIkcmXt6Q  (Docker)
+2.	https://youtu.be/J2GZhlhVKt4 (Creating Client Application (UI) And Deploying )
+3.	https://youtu.be/AL4Z3_FpjMY (Spring Boot Application deployment on embedded tomcat & external tomcat )
+4.	https://youtu.be/7kptCL3oeyw (Rest API Integration with Service Layer & Test using SOAP UI )
 
