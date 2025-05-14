@@ -44,3 +44,5 @@ Docker Deployment Instruction. (Prerequiste you need to have docker installed in
 	i. http://localhost:8080/welcomemessage (for jar deployed application)
 	ii. http://localhost:8080/PersonalInformationRestAPI-0.0.1-SNAPSHOT/welcomemessage (for war deployed application)
 
+Note: To better understand this project this video on youtube link: https://youtu.be/o8IIkcmXt6Q
+
